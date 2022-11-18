@@ -1,11 +1,9 @@
 <?php
 require_once 'test.php';
-require_once 'PHPUnit/Autoload.php';
 use PHPUnit\Framework\TestCase;
-class MyClassTest extends TestCase {
+class UnitTest extends TestCase {
     public function testRevertCharacters(){
-        $tst=new StringReverse();
-        $this->assertEquals("атекна,ремирП отэ",$tst->revertCharacters('это Пример,анкета'));
+        $this->assertEquals("атекна,ремирП отэ",revertCharacters('это Пример,анкета'));
     }
 }
 ?>
